@@ -1,0 +1,41 @@
+{
+    "name": "moicirk/formbootstrap",
+    "description": "Forms with the bootstrap 5",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Igor Murujev",
+            "email": "imurujev@gmail.com",
+            "homepage": "http://author.com"
+        }
+    ],
+    "homepage": "https://github.com/moicirk/formbootstrap",
+    "keywords": ["Laravel", "FormBootstrap"],
+    "require": {
+        "illuminate/support": "~9"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "~9.0",
+        "orchestra/testbench": "~7"
+    },
+    "autoload": {
+        "psr-4": {
+            "Moicirk\\FormBootstrap\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Moicirk\\FormBootstrap\\Tests\\": "tests"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Moicirk\\FormBootstrap\\FormBootstrapServiceProvider"
+            ],
+            "aliases": {
+                "FormBootstrap": "Moicirk\\FormBootstrap\\Facades\\FormBootstrap"
+            }
+        }
+    }
+}
